@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6) ),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+}
+
+.title{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 35px;
+    font-family: cursive;
+    text-decoration: underline;
+    color: #FF6E31;
+    text-decoration-color:#A0C3D2 ; 
+    transition: all 0.50s ease;
+}
+
+.add{
+    opacity: .9;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    background-color: #FF6E31;
+    background-image: linear-gradient(#A0C3D2 , 20% , #FF6E31);
+    width: 800px;
+    height: 170px;
+    border-radius: 10px;
+    border-color: transparent;
+    align-items: center;
+    position: relative;
+    top:80px;
+    transition: all 0.50s ease;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.59);
+}
+
+.add .input {
+    padding: 5px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: transparent;
+    transition: all 0.50s ease;
+}
+
+.add .btnAdd{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #FFEBB7;
+    color: black;
+    border-radius: 10px;
+    border-color: transparent;
+    transition: all 0.50s ease;
+}
+
+.add .btnAdd:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.429);
+
+}
+
+
+.tasks {
+    opacity: 0.9;
+    background-color: #FF6E31;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    width: 800px;
+    border-radius: 10px;
+    border-color: transparent;
+    align-items: center;
+    position: relative;
+    top:100px;
+    transition: all 0.50s ease;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.59);
+}
+
+.tasks .task {
+    padding: 5px;
+    cursor: pointer;
+    width: 80%;
+    height: fit-content;
+    background-color: white;
+    color: black;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: transparent;
+    font-size: 20px;
+    font-family: cursive;
+    transition: all 0.50s ease ;
+    word-break: keep-all;
+    line-height: 25px;
+    transition: all 0.50s ease;
+
+}
+
+.tasks .task:hover {
+    background-color: #FFEBB7;
+    transform: translateY(-1px)
+
+}
+
+.tasks .Done{
+    background-color: #AD8E70;
+    transform: translateY(-1px);
+    opacity: .5;
+    text-decoration-line: line-through;
+
+}
+
+.del{
+    cursor: pointer;
+    width: 63px;
+    height: 30px;
+    background-color:red;
+    opacity: 0.5;
+    color: white;
+    border-radius: 10px;
+    border-color: transparent;
+    font-size: 13px;
+    transition: all 0.50s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.50s ease;
+}
+
+
+.del:hover{
+    opacity: 1;
+    background-color: red;
+}
+
+.removeAll{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #FFEBB7;
+    color: black;
+    border-radius: 10px;
+    border-color: transparent;
+    transition: all 0.50s ease;
+    transition: all 0.50s ease;
+}
+
+
+.add .removeAll:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.429);
+
+}
+
+@media (max-width : 900px ){
+    .add{
+       
+        width: 600px;
+        height: 150px;
+    }
+
+    .tasks{
+        width: 600px;
+        height: fit-content;
+    }
+}
+
+@media ( max-width : 666px){
+    .add{
+       
+        width: 500px;
+        height: 125px;
+    }
+
+    .add .input {
+        width: 200px;
+        height: 40px;
+    }
+
+    .add .btnAdd {
+        width: 80px;
+        height: 40px;
+    }
+
+    .add .removeAll {
+        width: 80px;
+        height: 40px;
+    }
+
+    .tasks{
+        width: 500px;
+        height: fit-content;
+    }
+}
+
+
+@media ( max-width : 550px){
+
+    .title{
+        font-size: 23px;
+    }
+
+    .add{
+       
+        width: 320px;
+        height: 100px;
+    }
+
+    .add .input {
+        width: 150px;
+        height: 35px;
+    }
+
+    .add .btnAdd {
+        width: 60px;
+        height: 35px;
+        font-size: 10px;
+    }
+
+    .add .removeAll {
+        width: 60px;
+        height: 35px;
+        font-size: 10px;
+    }
+
+    .tasks{
+        width: 320px;
+        height: fit-content;
+    }
+
+    .del{
+        width: 55px;
+        height: 25px;
+        font-size: 10px;
+    }
+}
+
